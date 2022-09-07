@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Message Log</title>
+  <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light nav1">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Message Log</a>
+
+      </div>
+    </nav>
+    <div class="area">
+
+      <section class="container">
+        <div>
+          <h5 class="py-2">Date Range</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="LAST 60 DAYS" />
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-sort-down"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h5 class="py-2">From Date</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="06/18/2022" style="background-color: #ecf2f8;" />
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h5 class="py-2">To Date</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="08/17/2022" style="background-color: #ecf2f8;"/>
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-calendar"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div>
+          <h5 class="py-2">Search</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="Search" />
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        
+
+        <!-- <div class="btn1">
+          <button class="btn" id="btn2"><i class="fa fa-search" style="color: white;"></i> Search</button>
+          <button class="btn" id="btn3"><i class="fa fa-ban" style="color: white;"></i> Clear</button>
+        </div> -->
+
+
+      </section>
+
+      <section class="container">
+        <div>
+          <h5 class="py-2">Message Type</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="ALL" />
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-sort-down"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h5 class="py-2">Message Status</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="ALL" />
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-sort-down"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div>
+          <h5 class="py-2">Notification Type</h5>
+          <form class="row">
+            <div class="col-3">
+              <div class="input-group date" id="datepicker">
+                <input type="text" class="form-control" id="date" placeholder="SMS"/>
+                <span class="input-group-append">
+                  <span class="input-group-text bg-#DCDCDC d-block">
+                    <i class="fa fa-sort-down"></i>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div class="py-2" id="btnside">
+          <button class="btn" id="btn2"><span>- S</span> SEARCH</button>
+            <button class="btn" id="btn3"><span>- C</span> CLEAR</button>
+        </div>
+
+        
+
+        <!-- <div class="btn1">
+          <button class="btn" id="btn2"><i class="fa fa-search" style="color: white;"></i> Search</button>
+          <button class="btn" id="btn3"><i class="fa fa-ban" style="color: white;"></i> Clear</button>
+        </div> -->
+
+
+      </section>
+
+
+    </div>
+
+  </div>
+
+
+  <div class="m-4">
+
+
+    <table id="tbstud">
+      <tr>
+        <th class="column_heading" style="border-top-left-radius: 5px;">Patient Name</th>
+        <th class="column_heading">Mobile#</th>
+        <th class="column_heading">Date of Birth</th>
+        <th class="column_heading">Message Type</th>
+        <th class="column_heading">Message</th>
+        <th class="column_heading">Sent/Received Date Time</th>
+        <th class="column_heading">Message Status</th>
+        <th class="column_heading">Exception Details</th>
+        <th class="column_heading">Sent By</th>
+        <th class="column_heading" style="border-top-right-radius: 5px;">Notificatoin Type <button type="button"
+            class="btn"> <img src="HTML Table/icon/settings.png" height="15" width="15"></button></th>
+      </tr>
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td><input type="image" class="iicon" src="icon/i.png"/>   Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc"><input type="image" class="iicon" src="icon/Vector.png"/> FAILED &nbsp;&nbsp; <input type="image" class="iicon" src="icon/Vector 22.png"/></td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss.png"/></td>
+      </tr>
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td> <input type="image" class="iicon" src="icon/i.png"/> Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc1"> <input type="image" class="iicon" src="icon/Group 614.png"/> SENT </td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss2.png"/></td>
+      </tr>
+
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td> <input type="image" class="iicon" src="icon/i.png"/> Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc2"> <input type="image" class="iicon" src="icon/Group 619.png"/> RECEIVED </td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss3.png"/></td>
+      </tr>
+
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td><input type="image" class="iicon" src="icon/i.png"/> Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc3"> <input type="image" class="iicon" src="icon/Group 626.png"/> CANCELLED </td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss.png"/></td>
+      </tr>
+
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td> <input type="image" class="iicon" src="icon/i.png"/> Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc"> <input type="image" class="iicon" src="icon/Vector.png"/> FAILED &nbsp;&nbsp; <input type="image" class="iicon" src="icon/Vector 22.png"/></td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss2.png"/></td>
+      </tr>
+
+      
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td><input type="image" class="iicon" src="icon/i.png"/> Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc1"> <input type="image" class="iicon" src="icon/Group 614.png"/> SENT </td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss3.png"/></td>
+      </tr>
+
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td><input type="image" class="iicon" src="icon/i.png"/> Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc2"> <input type="image" class="iicon" src="icon/Group 619.png"/> RECEIVED </td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss.png"/></td>
+      </tr>
+
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td><input type="image" class="iicon" src="icon/i.png"/> Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc3"> <input type="image" class="iicon" src="icon/Group 626.png"/> CANCELLED </td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss.png"/></td>
+      </tr>
+
+
+      <tr class="customer_row">
+        <td>Patient 1</td>
+        <td>(949)121-2155</td>
+        <td>08/08/1980</td>
+        <td>REFILL DUE</td>
+        <td><input type="image" class="iicon" src="icon/i.png"/>   Hi Demo Internal your Rx number is ****981 with</td>
+        <td>08/17/2022 10:05:00 AM</td>
+        <td class="btnc"><input type="image" class="iicon" src="icon/Vector.png"/> FAILED &nbsp;&nbsp; <input type="image" class="iicon" src="icon/Vector 22.png"/></td>
+        <td>THE 'TO' NUMBER + 19491212155 IS NOT </td>
+        <td>ADMIN</td>
+        <td><input type="image" class="iicon" src="icon/sss.png"/></td>
+      </tr>
+
+      
+    </table>
+
+  </div>
+
+
+  <div class="m-4">
+    <nav class="navbar navbar-expand-lg navbar-light spc">
+      <div class="container-fluid">
+        
+    <div class="pagination p1">
+      <ul>
+        <a href="#" class="arw"><li><</li></a>
+        <a class="is-active" href="#"><li>1</li></a>
+        <a href="#"><li>2</li></a>
+        <a href="#"><li>3</li></a>
+        <a href="#"><li>4</li></a>
+        <a href="#"><li>5</li></a>
+        <a href="#" class="arw"><li>></li></a>
+      </ul>
+
+      <div class="pagination p1">
+        <b class="trs">Total Records: <span style="color:black"> 220</span></b>
+        </div>
+    </div>
+
+    
+
+
+    <div class="footerbtn">
+
+    <div class="dropdown">
+      <button class="btn5 btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        15
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button">Action</button>
+        <button class="dropdown-item" type="button">Another action</button>
+        <button class="dropdown-item" type="button">Something else here</button>
+      </div>
+    </div>
+
+    
+    <div class="btn2">
+      <button class="btn" id="btn0"><span>- J</span> EXPORT</button>
+    </div>
+
+  </div>
+
+    
+ 
+      </div>
+    </nav>
+  </div>
+
+
+</body>
+
+</html>
